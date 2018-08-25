@@ -53,6 +53,7 @@ namespace Swashbuckle.AspNetCore.SwaggerGen
         {
             if (schema == null) return;
 
+            partialSchema.Ref = schema.Ref;
             partialSchema.Type = schema.Type;
             partialSchema.Format = schema.Format;
 

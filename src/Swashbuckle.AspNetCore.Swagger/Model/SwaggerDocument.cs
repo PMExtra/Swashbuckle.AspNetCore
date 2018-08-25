@@ -304,6 +304,9 @@ namespace Swashbuckle.AspNetCore.Swagger
 
     public class PartialSchema
     {
+        [JsonProperty("$ref")]
+        public string Ref { get; set; }
+
         public string Type { get; set; }
 
         public string Format { get; set; }

@@ -283,7 +283,7 @@ namespace Swashbuckle.AspNetCore.SwaggerGen
                 {
                     // It's a referenced Schema and therefore needs to be located. This also means it's not neccessarily
                     // exclusive to this parameter and so, we can't assign any parameter specific attributes or metadata.
-                    schema = schemaRegistry.Definitions[schema.Ref.Replace("#/definitions/", string.Empty)];
+                    // schema = schemaRegistry.Definitions[schema.Ref.Replace("#/definitions/", string.Empty)];
                 }
                 else
                 {
